@@ -1,0 +1,17 @@
+.menu-icon {
+  width: 25px;
+  height: auto;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 11;
+  cursor: pointer;
+}
+
+.window-container{
+  width: 500px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
