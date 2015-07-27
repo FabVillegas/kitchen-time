@@ -5,7 +5,7 @@
   }
 
   #scroll-stage{
-    height: 5000px;
+    height: 4000px;
   }
 
   .slide{
@@ -86,7 +86,7 @@
   ======================================================================== */
 
   #slideOne {
-    background-image: url( ../images/placeholder-1.png );
+    background-image: url( ../images/kitchen-1.jpg );
     background-size: cover;
     background-position: center center;
   }
@@ -180,8 +180,8 @@
   ======================================================================== */
 
   #slideFour {
-    background: url( ../images/kitchen-2.jpg ) no-repeat 20px 20px;
-    background-size: 97% 95vh;
+    background: url( ../images/kitchen-2.jpg ) no-repeat 97% 20px;
+    background-size: 47% 95vh;
   }
 
   .slide4-window-title{
@@ -231,8 +231,8 @@
   ======================================================================== */
 
   #slideSix {
-    background: url( ../images/kitchen-2.jpg ) no-repeat 20px 20px;
-    background-size: 97% 95vh;
+    background: url( ../images/kitchen-2.jpg ) no-repeat 97% 20px;
+    background-size: 47% 95vh;
   }
 
   .slide6-window-title{
