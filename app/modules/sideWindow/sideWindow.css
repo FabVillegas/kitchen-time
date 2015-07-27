@@ -9,7 +9,7 @@
 }
 
 .window-container{
-  margin: 0 0 0 5%;
+  margin: 0 0 0 0;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -17,7 +17,7 @@
 }
 
 .window-container {
-  width: 45%;
+  width: 50%;
 }
 
 .window-container.ng-hide-add.ng-hide-add-active,
