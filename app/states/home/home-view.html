@@ -2,17 +2,21 @@
   id="scroll-stage"
   scroll-watch="{from: 0, to: -1}"
   sw-broadcast="{
-    'slide1': '$percentage < 50',
-    'slide2': '$percentage >= 50 && $percentage <= 100',
+    'slide1': '$percentage < 15',
+    'slide2': '$percentage >= 15 && $percentage < 30',
+    'slide3': '$percentage >= 30 && $percentage < 45',
+    'slide4': '$percentage >= 45 && $percentage < 60',
+    'slide5': '$percentage >= 60 && $percentage < 75',
+    'slide6': '$percentage >= 75 && $percentage < 90',
+    'slide7': '$percentage >= 90 && $percentage <= 100'
   }">
 
   <!-- SLIDE 1 -->
   <div id="slideOne" class="slide enter-animation" ng-show="slide1">
-    <div class="slide-content">
-      <div class="filter"></div>
+    <div class="slide-content transparent-background">
       <h1 class="home-phrase">Esta es la frase coquetona</h1>
       <div class="logo-container">
-        <img class="logo" src="images/placeholder-logo.jpg">
+        <img class="logo" src="images/placeholder-logo.png">
       </div>
     </div>
   </div>
@@ -20,10 +24,87 @@
   <!-- SLIDE 2 -->
   <div id="slideTwo" class="slide enter-animation" ng-show="slide2">
     <div class="slide-content">
-      <side-window></side-window>
+      <side-window use-black-icon>
+        <div class="window-container" ng-show="$parent.menuIsShown">
+          <h1 class="slide2-window-title">Título</h1>
+          <p class="slide2-window-text">
+            Una breve explicación que describa qué hace Kitchen Time y que exhorta al usuario a querer involucrarse en esa misión.
+          </p>
+        </div>
+      </side-window>
       <p class="slide2-text">
         Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
       </p>
+    </div>
+  </div>
+
+  <!-- SLIDE 3 -->
+  <div id="slideThree" class="slide enter-animation" ng-show="slide3">
+    <div class="slide-content">
+      <side-window>
+        <div class="window-container transparent-background" ng-show="$parent.menuIsShown">
+          <h1 class="slide3-window-title">Título</h1>
+          <p class="slide3-window-text">
+            Aqui va un texto que motiva al usuario a querer saber más de Kitchen Time. Cierra con una frase imperativa "call to action" que busca que el usuario dé click en el botón que lleva a la tienda.
+          </p>
+        </div>
+      </side-window>
+    </div>
+  </div>
+
+  <!-- SLIDE 4 -->
+  <div id="slideFour" class="slide enter-animation" ng-show="slide4">
+    <div class="slide-content">
+      <side-window>
+        <div class="window-container solid-background" ng-show="$parent.menuIsShown">
+          <h1 class="slide4-window-title">Título</h1>
+          <p class="slide4-window-text">
+            Aqui va un texto que motiva al usuario a querer saber más de Kitchen Time. Cierra con una frase imperativa "call to action" que busca que el usuario dé click en el botón que lleva a la tienda.
+          </p>
+        </div>
+      </side-window>
+    </div>
+  </div>
+
+  <!-- SLIDE 5 -->
+  <div id="slideFive" class="slide enter-animation" ng-show="slide5">
+    <div class="slide-content">
+      <side-window>
+        <div class="window-container solid-grey-background" ng-show="$parent.menuIsShown">
+          <h1 class="slide5-window-title">Título</h1>
+          <p class="slide5-window-text">
+            Aqui va un texto que motiva al usuario a querer saber más de Kitchen Time. Cierra con una frase imperativa "call to action" que busca que el usuario dé click en el botón que lleva a la tienda.
+          </p>
+        </div>
+      </side-window>
+    </div>
+  </div>
+
+  <!-- SLIDE 6 -->
+  <div id="slideSix" class="slide enter-animation" ng-show="slide6">
+    <div class="slide-content">
+      <side-window>
+        <div class="window-container solid-background" ng-show="$parent.menuIsShown">
+          <h1 class="slide6-window-title">Título</h1>
+          <p class="slide6-window-text">
+            Aqui va un texto que motiva al usuario a querer saber más de Kitchen Time. Cierra con una frase imperativa "call to action" que busca que el usuario dé click en el botón que lleva a la tienda.
+          </p>
+        </div>
+      </side-window>
+    </div>
+  </div>
+
+  <!-- SLIDE 7 -->
+  <div id="slideSeven" class="slide enter-animation" ng-show="slide7">
+    <div class="slide-content">
+      <side-window>
+        <div class="window-container solid-grey-background" ng-show="$parent.menuIsShown">
+          <h1 class="slide7-window-title">Título</h1>
+          <p class="slide7-window-text">
+            Aqui va un texto que motiva al usuario a querer saber más de Kitchen Time. Cierra con una frase imperativa "call to action" que busca que el usuario dé click en el botón que lleva a la tienda.
+          </p>
+        </div>
+      </side-window>
     </div>
   </div>
 

@@ -9,9 +9,25 @@
 }
 
 .window-container{
-  width: 500px;
+  margin: 0 0 0 5%;
   height: 100vh;
   position: fixed;
   top: 0;
   z-index: 10;
+}
+
+.window-container {
+  width: 45%;
+}
+
+.window-container.ng-hide-add.ng-hide-add-active,
+.window-container.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: 0.2s linear all;
+  -moz-transition:    0.2s linear all;
+  -o-transition:      0.2s linear all;
+  transition:         0.2s linear all;
+}
+
+.window-container.ng-hide {
+  width: 0px;
 }

@@ -1,85 +1,248 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
 
-#scroll-stage{
-  height: 2000px;
-}
+  #scroll-stage{
+    height: 5000px;
+  }
 
-.slide{
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  color: black;
-  opacity: 0.9;
-}
+  .slide{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    color: black;
+    opacity: 0.9;
+  }
 
-#slideOne {
-  background-image: url( ../images/placeholder-1.jpg );
-  background-size: cover;
-  background-position: center center;
-}
+  .slide-content{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    position: relative;
+  }
 
-#slideTwo {
-  background-color: #C6C5C5;
-}
+  .window-container{
+    background-color: #7F7E7E;
+  }
 
-.slide2-text{
-  width: 40%;
-  position: absolute;
-  top: 40vh;
-  right: 10%;
-  font-size: 2em;
-  font-weight: 700;
-  color: #000000;
-  text-align: center;
-}
+  .transparent-background{
+    background-color: rgba( 0, 0, 0, 0.5 );
+  }
 
-.filter {
-  background-color: #000000;
-  opacity: 0.50;
-  width: 100%;
-  height: 100%;
-}
+  .solid-background{
+    background-color: rgba( 0, 0, 0, 1 );
+  }
 
-.slide-content{
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  position: relative;
-}
-
-.home-phrase {
-  position: absolute;
-  top: 10vh;
-  width: 100%;
-  margin: 0;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 4em;
-}
-
-.logo-container{
-  width: 100%;
-  position: absolute;
-  bottom: 20vh;
-}
-
-.logo {
-  width: 20%;
-  height: auto;
-  margin: 0 40% 0 40%;
-}
+  .solid-grey-background{
+    background-color: rgba( 160, 160, 160, 1 );
+  }
 
 
-.window-container{
-  background-color: #7F7E7E;
-}
+/* ========================================================================
+  SLIDE 1
+  ======================================================================== */
+
+  #slideOne {
+    background-image: url( ../images/placeholder-1.png );
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .home-phrase {
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    margin: 0;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 4em;
+  }
+
+  .logo-container{
+    width: 100%;
+    position: absolute;
+    bottom: 20vh;
+  }
+
+  .logo {
+    width: 20%;
+    height: auto;
+    margin: 0 40% 0 40%;
+  }
+
+/* ========================================================================
+  SLIDE 2
+  ======================================================================== */
+
+  #slideTwo {
+    background-color: #FFFFFF;
+  }
+
+  .slide2-window-title{
+    color: #000000;
+    position: absolute;
+    top: 40vh;
+    left: 12%;
+  }
+
+  .slide2-window-text{
+    color: #FFFFFF;
+    position: absolute;
+    top: 50vh;
+    left: 12%;
+    width: 75%;
+    font-size: 1.5em;
+  }
+
+  .slide2-text{
+    width: 40%;
+    position: absolute;
+    top: 40vh;
+    right: 10%;
+    font-size: 2em;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+  }
+
+
+/* ========================================================================
+  SLIDE 3
+  ======================================================================== */
+
+    #slideThree{
+      background-image: url( ../images/placeholder-2.png );
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .slide3-window-title{
+      color: #000000;
+      position: absolute;
+      top: 40vh;
+      left: 12%;
+    }
+
+    .slide3-window-text{
+      color: #FFFFFF;
+      position: absolute;
+      top: 50vh;
+      left: 12%;
+      width: 75%;
+      font-size: 1.5em;
+    }
+
+
+/* ========================================================================
+  SLIDE 4
+  ======================================================================== */
+
+  #slideFour {
+    background-image: url( ../images/placeholder-3.png );
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .slide4-window-title{
+    color: #000000;
+    position: absolute;
+    top: 40vh;
+    left: 12%;
+  }
+
+  .slide4-window-text{
+    color: #FFFFFF;
+    position: absolute;
+    top: 50vh;
+    left: 12%;
+    width: 75%;
+    font-size: 1.5em;
+  }
+
+/* ========================================================================
+  SLIDE 5
+  ======================================================================== */
+
+  #slideFive {
+    background-image: url( ../images/placeholder-4.png );
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .slide5-window-title{
+    color: #000000;
+    position: absolute;
+    top: 40vh;
+    left: 12%;
+  }
+
+  .slide5-window-text{
+    color: #FFFFFF;
+    position: absolute;
+    top: 50vh;
+    left: 12%;
+    width: 75%;
+    font-size: 1.5em;
+  }
+
+
+/* ========================================================================
+  SLIDE 6
+  ======================================================================== */
+
+  #slideSix {
+    background-image: url( ../images/placeholder-2.png );
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .slide6-window-title{
+    color: #000000;
+    position: absolute;
+    top: 40vh;
+    left: 12%;
+  }
+
+  .slide6-window-text{
+    color: #FFFFFF;
+    position: absolute;
+    top: 50vh;
+    left: 12%;
+    width: 75%;
+    font-size: 1.5em;
+  }
+
+/* ========================================================================
+  SLIDE 7
+  ======================================================================== */
+
+  #slideSeven {
+    background-image: url( ../images/placeholder-3.png );
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .slide7-window-title{
+    color: #000000;
+    position: absolute;
+    top: 40vh;
+    left: 12%;
+  }
+
+  .slide7-window-text{
+    color: #FFFFFF;
+    position: absolute;
+    top: 50vh;
+    left: 12%;
+    width: 75%;
+    font-size: 1.5em;
+  }
+
 
 /* ========================================================================
   ANIMATIONS

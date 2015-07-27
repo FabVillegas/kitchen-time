@@ -7,7 +7,7 @@ function homeController( $scope ) {
 
   ///////////////////////////////////////////////////////
 
-  angular.forEach( [ 1, 2 ], function( i ) {
+  angular.forEach( [ 1, 2, 3, 4, 5, 6, 7 ], function( i ) {
     vm.$on('slide' + i, onSlideChange);
   });
 
