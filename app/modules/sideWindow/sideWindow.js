@@ -15,7 +15,7 @@ app.directive( 'sideWindow', function( $compile ) {
 				angular.element( element[0].children[0] ).append( angular.element( $compile('<img class="menu-icon" ng-click="toggleMenu()" src="images/menu-white.svg">')(scope) ) );
 			}
 
-			scope.menuIsShown = true;
+			scope.menuIsShown = false;
 
       scope.toggleMenu = function(){
         scope.menuIsShown = !scope.menuIsShown;
