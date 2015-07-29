@@ -9,7 +9,7 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
 	$stateProvider.
 	state('home', {
 		url: '/home',
-		templateUrl: 'states/home/home-view.html',
+		templateUrl: 'states/home/homeView-surrogate.html',
 		controller: 'homeController'
 	});
 }]);
