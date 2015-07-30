@@ -1,0 +1,118 @@
+<div ng-controller="homeController">
+
+  <div id="video-container">
+    <video id="video-loop" loop autoplay muted>
+      <source src="./assets/landingvideo.mp4" type="video/mp4">
+      <source src="./assets/landingvideo.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div id="video-captions" class="transparent-background">
+    <h1 class="home-title">We're cooking something for you!</h1>
+    <h1 class="home-subtitle">Can't wait? Call us!</h1>
+    <div class="logo-container">
+      <img class="logo" src="images/kitchen-logo-white.png">
+    </div>
+  </div>
+
+  <div id="content-container">
+
+    <div id="section-1" class="section">
+      <side-window>
+        <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
+          <h1 class="window-title">Título</h1>
+          <p class="window-text">
+            Una breve explicación que describa qué hace Kitchen Time y que exhorta al usuario a querer involucrarse en esa misión.
+          </p>
+        </div>
+      </side-window>
+      <div class="left-side">
+        <p class="side-text white-text">
+          Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
+        </p>
+      </div>
+      <div class="right-side">
+        <p class="side-text black-text">
+          Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
+        </p>
+      </div>
+    </div>
+
+    <div id="section-2" class="section">
+      <side-window>
+        <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
+          <h1 class="window-title">Título</h1>
+          <p class="window-text">
+            Una breve explicación que describa qué hace Kitchen Time y que exhorta al usuario a querer involucrarse en esa misión.
+          </p>
+        </div>
+      </side-window>
+      <div class="left-side">
+        <p class="side-text white-text">
+          Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
+        </p>
+      </div>
+    </div>
+
+    <div id="section-3" class="section">
+      <side-window>
+        <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
+          <h1 class="window-title">Título</h1>
+          <p class="window-text">
+            Una breve explicación que describa qué hace Kitchen Time y que exhorta al usuario a querer involucrarse en esa misión.
+          </p>
+        </div>
+      </side-window>
+      <div class="left-side">
+        <p class="side-text white-text">
+          Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
+        </p>
+      </div>
+    </div>
+
+    <div id="section-4" class="section">
+      <side-window>
+        <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
+          <h1 class="window-title">Título</h1>
+          <p class="window-text">
+            Una breve explicación que describa qué hace Kitchen Time y que exhorta al usuario a querer involucrarse en esa misión.
+          </p>
+        </div>
+      </side-window>
+      <div class="left-side">
+        <p class="side-text white-text">
+          Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
+        </p>
+      </div>
+    </div>
+
+    <div id="section-5" class="section">
+      <side-window>
+        <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
+          <h1 class="window-title">Título</h1>
+          <p class="window-text">
+            Una breve explicación que describa qué hace Kitchen Time y que exhorta al usuario a querer involucrarse en esa misión.
+          </p>
+        </div>
+      </side-window>
+      <div class="left-side">
+        <p class="side-text white-text">
+          Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
+        </p>
+      </div>
+      <style>
+        #map-canvas {
+          width: 500px;
+          height: 400px;
+        }
+      </style>
+      <div class="right-side">
+        <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+          <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
+        </ui-gmap-google-map>
+      </div>
+    </div>
+
+  </div>
+</div>
