@@ -18,6 +18,22 @@
 
   <div id="content-container">
 
+    <div id="section-2" class="section">
+      <side-window>
+        <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
+          <h1 class="window-title">Título</h1>
+          <p class="window-text">
+            Una breve explicación que describa qué hace Kitchen Time y que exhorta al usuario a querer involucrarse en esa misión.
+          </p>
+        </div>
+      </side-window>
+      <div class="left-side">
+        <p class="side-text white-text">
+          Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
+        </p>
+      </div>
+    </div>
+
     <div id="section-1" class="section">
       <side-window>
         <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
@@ -34,22 +50,6 @@
       </div>
       <div class="right-side">
         <p class="side-text black-text">
-          Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
-        </p>
-      </div>
-    </div>
-
-    <div id="section-2" class="section">
-      <side-window>
-        <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
-          <h1 class="window-title">Título</h1>
-          <p class="window-text">
-            Una breve explicación que describa qué hace Kitchen Time y que exhorta al usuario a querer involucrarse en esa misión.
-          </p>
-        </div>
-      </side-window>
-      <div class="left-side">
-        <p class="side-text white-text">
           Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
         </p>
       </div>
@@ -90,10 +90,15 @@
     <div id="section-5" class="section">
       <side-window>
         <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
-          <h1 class="window-title">Título</h1>
-          <p class="window-text">
-            Una breve explicación que describa qué hace Kitchen Time y que exhorta al usuario a querer involucrarse en esa misión.
-          </p>
+          <div class="window-form">
+            <label class="window-label">Nombre:</label>
+            <input class="window-input" type="text">
+            <label class="window-label">Email:</label>
+            <input class="window-input" type="text">
+            <label class="window-label">Comentarios:</label>
+            <textarea class="window-textarea" rows="4" cols="50"></textarea>
+            <button class="window-button" type="button">Enviar</button>
+          </div>
         </div>
       </side-window>
       <div class="left-side">
@@ -101,12 +106,6 @@
           Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
         </p>
       </div>
-      <style>
-        #map-canvas {
-          width: 500px;
-          height: 400px;
-        }
-      </style>
       <div class="right-side">
         <ui-gmap-google-map center='map.center' zoom='map.zoom'>
           <ui-gmap-marker coords="marker.coords" options="marker.options" idkey="marker.id">
