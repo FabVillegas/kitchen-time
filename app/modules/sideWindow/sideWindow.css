@@ -42,6 +42,61 @@
   color: #FFFFFF;
 }
 
+.window-form{
+  width:75%;
+  margin: 0 15% 0 10%;
+  position: absolute;
+  top: 25vh;
+}
+
+.window-label{
+  width: 100%;
+  color: #FFFFFF;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.window-input {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #000000;
+  font-weight: 400;
+  font-family: 'Roboto';
+  font-size: 1.5em;
+  border: none;
+}
+
+.window-textarea {
+  resize: none;
+  width: 99%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #000000;
+  font-weight: 400;
+  font-family: 'Roboto';
+  font-size: 1.5em;
+  border: none;
+}
+
+.window-button {
+  width: 25%;
+  margin-top: 10px;
+  margin-left: 75%;
+  height: 40px;
+  background-color: #00D5E9;
+  border: none;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.window-button:hover {
+  background-color: #00717B;
+}
+
 .window-container.ng-hide-add.ng-hide-add-active,
 .window-container.ng-hide-remove.ng-hide-remove-active {
   -webkit-transition: 0.2s linear all;
