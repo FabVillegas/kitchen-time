@@ -163,11 +163,26 @@
   CATALOGUE
   ========================================================================= */
 
+  .logo-div{
+    width: 20%;
+    margin: 5% 70% 0 10%;
+    cursor: pointer;
+  }
+
+  .logo-div:hover {
+    opacity:0.6;
+  }
+
+  .logo-div img{
+    width: 100%;
+    height: auto;
+  }
+
   .carrusel{
     width: 80%;
     height: 600px;
-    padding-top: 3%;
-    margin: 1% auto;
+    padding: 5%;
+    margin: 0 auto;
     position: relative;
     background-color: #FFFFFF;
   }
@@ -202,18 +217,19 @@
 
   .right, .left {
     position: absolute;
-    top: 50%;
+    top: 40%;
     font-weight: 400;
     font-size: 3em;
-    cursor: pointer
+    cursor: pointer;
+    color: #000000;
   }
 
   .right{
-    right: 0;
+    right: 8%;
   }
 
   .left{
-    left: 0;
+    left: 8%;
   }
 
   .right:hover, .left:hover{
@@ -229,8 +245,8 @@
 
   .back {
     position: absolute;
-    top: 0;
-    right: 10%;
+    top: 25px;
+    right: 15%;
     color: #000000;
     font-size: 3em;
     font-weight: 400;

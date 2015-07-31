@@ -1,6 +1,9 @@
 <div ng-controller="catalogueController as vm">
-  <div class="back" ng-click="vm.goBack()">Call us!</div>
+  <div class="logo-div" ng-click="vm.goBack()">
+    <img src="images/kitchen-logo-black.png">
+  </div>
   <div class="carrusel">
+    <div class="back" ng-click="vm.goBack()">Call us!</div>
     <img id="kitchen" class="product-image enter-animation" src="./images/carrusel/kitchen{{vm.kitchen.image_path}}.jpg">
     <div class="product-description greenish-text">{{vm.kitchen.description}}</div>
     <div ng-click="vm.changeKitchen('prev')" class="left">←</div>
