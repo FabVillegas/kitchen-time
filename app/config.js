@@ -2,7 +2,6 @@ angular.module('kitchen-time', [
   'ui.router',
   'pc035860.scrollWatch',
   'ngAnimate',
-  'sideWindow',
   'uiGmapgoogle-maps'
 ]).
 config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
@@ -12,5 +11,10 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
 		url: '/home',
 		templateUrl: 'states/home/homeView.html',
 		controller: 'homeController'
-	});
+	}).
+  state('catalogue', {
+    url: '/catalogue',
+    templateUrl: 'states/catalogue/catalogueView.html',
+    controller: 'catalogueController'
+  });
 }]);

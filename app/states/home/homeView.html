@@ -1,4 +1,4 @@
-<div ng-controller="homeController">
+<div ng-controller="homeController as vm">
 
   <div id="video-container">
     <video id="video-loop" loop autoplay muted>
@@ -20,12 +20,13 @@
 
     <div id="section-2" class="section">
       <side-window>
-        <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
+        <div class="open-close-icon" ng-click="toggleMenu()">{{symbol}}</div>
+        <div class="window-container solid-black-background" ng-show="menuIsShown">
           <h1 class="window-title"></h1>
           <p class="window-text white-text">
             Te estamos esperando en nuestra tienda, visítanos, date una oportunidad de conocer nuestros productos. <span class="bluish-text">Te invitamos a que veas nuestra tienda.</span>
           </p>
-          <button class="action-button" type="button">Ir a la tienda</button>
+          <button class="action-button" type="button" ng-click="go('catalogue')">Ir a la tienda</button>
         </div>
       </side-window>
       <div class="left-side">
@@ -42,7 +43,7 @@
         <p class="side-text white-text">
           Tú tienes un sueño, nosotros también: que puedas cumplirlo. Trabajamos todos los días para poder ofrecerte los mejores productos  y el mejor servicio. <span class="bluish-text">¡Visita nuestro catálogo!</span>
         </p>
-        <button class="action-button" type="button">Ir a la tienda</button>
+        <button class="action-button" type="button" ng-click="vm.go('catalogue')">Ir a la tienda</button>
       </div>
       <div class="right-side">
         <h1 class="side-title black-text" style="text-align: center">★ ★ ★ ★ ★ <br> Calidad.</h1>
@@ -54,7 +55,12 @@
 
     <div id="section-3" class="section">
       <side-window>
-        <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
+        <div id="cheat" class="window-container">
+          <button class="action-button" type="button" ng-click="toggleMenu()">¡Únete!</button>
+        </div>
+
+        <div class="open-close-icon" ng-click="toggleMenu()">{{symbol}}</div>
+        <div class="window-container solid-black-background" ng-show="menuIsShown">
           <div class="window-form">
             <label class="window-label">Nombre de la compañía:</label>
             <input class="window-input" type="text">
@@ -77,13 +83,13 @@
         <p class="side-text white-text">
           Si quieres ser parte del mayor proyecto de cocinas en Monterrey, te invitamos a que te unas a nuestra red  de distribuidores.<span class="bluish-text"> ¿Te interesa?</span>
         </p>
-        <button class="action-button" type="button">¡Únete!</button>
       </div>
     </div>
 
     <div id="section-4" class="section">
       <side-window>
-        <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
+        <div class="open-close-icon" ng-click="toggleMenu()">{{symbol}}</div>
+        <div class="window-container solid-black-background" ng-show="menuIsShown">
           <div class="window-form">
             <label class="window-label">Nombre:</label>
             <input class="window-input" type="text">
@@ -91,7 +97,7 @@
             <input class="window-input" type="text">
             <label class="window-label">Comentarios:</label>
             <textarea class="window-textarea" rows="4" cols="50"></textarea>
-            <button class="window-button" type="button">Enviar</button>
+            <button class="window-button" type="button" ng-click="go('catalogue')">Enviar</button>
           </div>
         </div>
       </side-window>
@@ -110,9 +116,9 @@
         </p>
       </div>
       <div class="right-side">
-        <ui-gmap-google-map center='map.center' zoom='map.zoom' options="options">
-          <ui-gmap-marker coords="marker.coords" options="marker.options" idkey="marker.id">
-            <ui-gmap-window show="true" options="windowOptions" closeClick="closeClick()" templateUrl='window.template'>
+        <ui-gmap-google-map center='vm.map.center' zoom='vm.map.zoom' options="vm.options">
+          <ui-gmap-marker coords="vm.marker.coords" options="vm.marker.options" idkey="vm.marker.id">
+            <ui-gmap-window show="true" options="vm.windowOptions" closeClick="vm.closeClick()" templateUrl='vm.window.template'>
             </ui-gmap-window>
           </ui-gmap-marker>
         </ui-gmap-google-map>

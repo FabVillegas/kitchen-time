@@ -160,6 +160,90 @@
   }
 
 /* ========================================================================
+  CATALOGUE
+  ========================================================================= */
+
+  .carrusel{
+    width: 80%;
+    height: 600px;
+    padding-top: 3%;
+    margin: 1% auto;
+    position: relative;
+    background-color: #FFFFFF;
+  }
+
+  .product-image{
+    width: 800px;
+    height: auto;
+    display: block;
+    margin: 2% auto;
+    position: relative;
+  }
+
+  .product-description{
+    width: 33%;
+    height: 100px;
+    padding: 2%;
+    margin-right: 0;
+    margin-left: 60%;
+    position: absolute;
+    font-weight: 300;
+    bottom: 0;
+    right: 0;
+    background: rgba( 0, 0, 0, 0.75);
+  }
+
+  .pagination {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 3em;
+  }
+
+  .right, .left {
+    position: absolute;
+    top: 50%;
+    font-weight: 400;
+    font-size: 3em;
+    cursor: pointer
+  }
+
+  .right{
+    right: 0;
+  }
+
+  .left{
+    left: 0;
+  }
+
+  .right:hover, .left:hover{
+    color: #77E8BD;
+  }
+
+  .enter-animation{
+    -webkit-transition: 0.20s linear all;
+    -moz-transition:    0.20s linear all;
+    -o-transition:      0.20s linear all;
+    transition:         0.20s linear all;
+  }
+
+  .back {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    color: #000000;
+    font-size: 3em;
+    font-weight: 400;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .back:hover{
+    color: #77E8BD;
+  }
+
+
+/* ========================================================================
   FONT-FACE
   ======================================================================== */
 
