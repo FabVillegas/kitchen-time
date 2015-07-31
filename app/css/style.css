@@ -165,7 +165,6 @@
 
   .logo-div{
     width: 100%;
-    cursor: pointer;
     overflow: auto;
   }
 
@@ -175,15 +174,16 @@
     padding: 5%;
   }
 
-  .logo-div:hover {
-    opacity:0.6;
-  }
-
   .logo-div img{
     width: 20%;
     height: auto;
     margin: 0;
     float: left;
+    cursor: pointer;
+  }
+
+  .logo-div img:hover{
+    opacity:0.6;
   }
 
   .back {
