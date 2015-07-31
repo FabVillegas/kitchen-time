@@ -27,10 +27,23 @@ function catalogueController( $scope, $timeout, $state ) {
   function initiateArray() {
     vm.kitchens_array = [
       { image_path: '1', description: 'Descripción breve de lo que es la cocina: materiales, medidas, componentes y electrodomésticos.' },
-      { image_path: '2', description: 'Otra Descripción breve de lo que es la cocina: materiales, medidas, componentes y electrodomésticos.' },
-      { image_path: '3', description: 'Una Descripción breve de lo que es la cocina: materiales, medidas, componentes y electrodomésticos.' },
-      { image_path: '4', description: 'Casi la última Descripción breve de lo que es la cocina: materiales, medidas, componentes y electrodomésticos.' },
-      { image_path: '5', description: 'Una más Descripción breve de lo que es la cocina: materiales, medidas, componentes y electrodomésticos.' },
+      { image_path: '2', description: 'Otra descripción breve de lo que es la cocina: cocina, medidas, componentes y electrodomésticos.' },
+      { image_path: '3', description: 'Una descripción breve de lo que es la cocina: cocina, medidas, componentes y electrodomésticos.' },
+      { image_path: '4', description: 'Casi la última descripción breve de lo que es la cocina: materiales, medidas, componentes y electrodomésticos.' },
+      { image_path: '5', description: 'Una más descripción breve de lo que es la cocina: materiales, medidas, componentes y electrodomésticos.' },
+      { image_path: '6', description: 'Una más descripción breve de lo que es la cocina: materiales, medidas, componentes y electrodomésticos.' },
+      { image_path: '7', description: 'Cocina: cocina, cocina, cocina y cocina.' },
+      { image_path: '8', description: 'Breve de lo que es la cocina: materiales, medidas, componentes y electrodomésticos.' },
+      { image_path: '9', description: 'Descripción descriptiva de la cocina: materiales, medidas, componentes y electrodomésticos.' },
+      { image_path: '10', description: 'Materiales, medidas, componentes y electrodomésticos.' },
+      { image_path: '11', description: 'Descripción breve de lo que es la cocina: materiales, medidas, componentes y electrodomésticos.' },
+      { image_path: '12', description: 'Descripción de la cocina: materiales, medidas, componentes y electrodomésticos.' },
+      { image_path: '13', description: 'Descripción de lo que es la cocina: materiales, medidas, componentes y electrodomésticos.' },
+      { image_path: '14', description: 'Descripción: materiales, medidas, componentes y electrodomésticos.' },
+      { image_path: '15', description: 'Descripción descriptiva: materiales, medidas, componentes y electrodomésticos.' },
+      { image_path: '16', description: 'Descripción: materiales, medidas, componentes y electrodomésticos.' },
+      { image_path: '17', description: 'Breve descripción de lo que es la cocina: materiales, medidas, componentes y electrodomésticos.' },
+      { image_path: '18', description: 'Descripción breve de lo que es la cocina: materiales, medidas, componentes y electrodomésticos.' },
     ];
   };
 
