@@ -3,7 +3,9 @@ angular.module( 'kitchen-time' ).directive( 'sideWindow', function( $compile, $s
 		restrict:'E',
 		scope: {},
 		link: function( scope, element, attrs ) {
+
 			scope.menuIsShown = false;
+
 			// symbols ╳ → ←
 			scope.symbol = '→';
 
