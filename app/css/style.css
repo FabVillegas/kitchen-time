@@ -20,6 +20,14 @@
     color: #000000;
   }
 
+  .bluish-text {
+    color: #C5F7FF;
+  }
+
+  .greenish-text{
+    color: #77E8BD;
+  }
+
 /* ========================================================================
   HOME
   ========================================================================= */
@@ -112,14 +120,21 @@
   }
 
   .side-text{
-    width: 50%;
-    margin: 0 25% 0 25%;
+    width: 75%;
+    margin: 0 15% 0 10%;
     position: absolute;
     top: 40vh;
-    font-family: 'Roboto';
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.5em;
-    text-align: center;
+  }
+
+  .side-title {
+    width: 75%;
+    margin: 0 15% 0 10%;
+    position: absolute;
+    top: 25vh;
+    font-weight: 700;
+    font-size: 1.5em;
   }
 
   #section-1{
@@ -137,11 +152,6 @@
   }
 
   #section-4{
-    background: url( ../images/kitchen-3.jpg ) no-repeat 20px 20px;
-    background-size: 97% 95vh;
-  }
-
-  #section-5{
     background: rgba( 255, 255, 255, 1);
   }
 
@@ -161,8 +171,20 @@
 
   @font-face {
     font-family: 'Roboto';
+    src: url(../assets/Roboto-Light.ttf);
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
     src: url(../assets/Roboto-Regular.ttf);
     font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url(../assets/Roboto-Medium.ttf);
+    font-weight: 500;
   }
 
   @font-face {
