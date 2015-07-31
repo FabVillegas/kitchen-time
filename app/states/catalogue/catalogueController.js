@@ -51,7 +51,6 @@ function catalogueController( $scope, $timeout, $state ) {
     if( direction === 'next' ) {
       vm.kitchen = vm.kitchens_array[ ( ( vm.carrusel_control + 1 ) % vm.kitchens_array.length )];
       vm.carrusel_control = ( vm.carrusel_control + 1 ) % vm.kitchens_array.length;
-      transition();
     }
     else if( direction === 'prev' ) {
       if ( vm.carrusel_control === 0) {
@@ -59,7 +58,6 @@ function catalogueController( $scope, $timeout, $state ) {
       }
       vm.kitchen = vm.kitchens_array[ ( ( vm.carrusel_control - 1 ) % vm.kitchens_array.length )];
       vm.carrusel_control = ( vm.carrusel_control - 1 ) % vm.kitchens_array.length;
-      transition();
     }
   };
 
