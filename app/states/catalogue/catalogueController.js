@@ -11,7 +11,8 @@ function catalogueController( $scope, $timeout, $state ) {
   vm.current_image = 1;
   vm.carrusel_control = 0;
 
-  vm.goBack = goBack;
+  vm.goContact = goContact;
+  vm.goHome = goHome;
   vm.changeKitchen = changeKitchen;
 
   active();
@@ -72,7 +73,11 @@ function catalogueController( $scope, $timeout, $state ) {
     }, 750);
   };
 
-  function goBack(){
+  function goContact() {
+    $state.go( 'home', {section: 'contact'} );
+  }
+
+  function goHome(){
     $state.go( 'home' );
   }
 

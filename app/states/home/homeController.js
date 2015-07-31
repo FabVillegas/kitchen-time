@@ -1,8 +1,8 @@
 angular.module( 'kitchen-time' ).controller( 'homeController', homeController );
 
-homeController.$inject = [ '$scope', '$state' ];
+homeController.$inject = [ '$scope', '$state', '$stateParams', '$location', '$anchorScroll' ];
 
-function homeController( $scope, $state ) {
+function homeController( $scope, $state, $stateParams, $location, $anchorScroll ) {
 
   var vm = this;
   vm.map = { center: { latitude: 25.656681, longitude: -100.36575 }, zoom: 19 };
@@ -22,7 +22,16 @@ function homeController( $scope, $state ) {
   vm.go = go;
   vm.closeClick = closeClick;
 
+  active();
+
   //////////////////////////////////////////////////////////
+
+  function active() {
+    if( $stateParams.section === 'contact' ){
+      $location.hash('contact');
+      $anchorScroll();
+    }
+  };
 
   function go( stateName ){
     $state.go( stateName );

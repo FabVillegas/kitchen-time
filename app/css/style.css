@@ -165,8 +165,14 @@
 
   .logo-div{
     width: 20%;
-    margin: 5% 70% 0 10%;
     cursor: pointer;
+  }
+
+  footer{
+    width: 90%;
+    margin-top: 50px;
+    padding: 5%;
+    background: rgba(0, 0, 0, 0.75);
   }
 
   .logo-div:hover {
@@ -209,9 +215,12 @@
 
   .pagination {
     width: 80%;
-    margin: 0 auto;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 2.2em;
   }
 
   .right, .left {
@@ -248,7 +257,7 @@
     top: 25px;
     right: 5%;
     color: #000000;
-    font-size: 3em;
+    font-size: 2.2em;
     font-weight: 400;
     cursor: pointer;
     z-index: 1;

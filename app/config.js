@@ -9,7 +9,7 @@ config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRou
 	$urlRouterProvider.otherwise('home');
 	$stateProvider.
 	state('home', {
-		url: '/home',
+		url: '/home?section',
 		templateUrl: 'states/home/homeView.html',
 		controller: 'homeController'
 	}).
