@@ -180,7 +180,6 @@
 
   .carrusel{
     width: 80%;
-    height: 600px;
     padding: 5%;
     margin: 0 auto;
     position: relative;
@@ -188,10 +187,10 @@
   }
 
   .product-image{
-    width: 800px;
+    width: 100%;
     height: auto;
     display: block;
-    margin: 2% auto;
+    margin: 2% 0 0 0;
     position: relative;
   }
 
@@ -217,7 +216,7 @@
 
   .right, .left {
     position: absolute;
-    top: 40%;
+    top: 50%;
     font-weight: 400;
     font-size: 3em;
     cursor: pointer;
@@ -234,6 +233,7 @@
 
   .right:hover, .left:hover{
     color: #77E8BD;
+    /* color: #FFFFFF; */
   }
 
   .enter-animation{
@@ -246,7 +246,7 @@
   .back {
     position: absolute;
     top: 25px;
-    right: 15%;
+    right: 5%;
     color: #000000;
     font-size: 3em;
     font-weight: 400;
