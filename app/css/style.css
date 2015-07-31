@@ -120,8 +120,8 @@
   }
 
   .side-text{
-    width: 75%;
-    margin: 0 15% 0 10%;
+    width: 80%;
+    margin: 0 10% 0 10%;
     position: absolute;
     top: 40vh;
     font-weight: 300;
@@ -129,8 +129,8 @@
   }
 
   .side-title {
-    width: 75%;
-    margin: 0 15% 0 10%;
+    width: 80%;
+    margin: 0 10% 0 10%;
     position: absolute;
     top: 25vh;
     font-weight: 700;
