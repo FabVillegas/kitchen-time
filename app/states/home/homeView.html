@@ -21,36 +21,33 @@
     <div id="section-2" class="section">
       <side-window>
         <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
-          <h1 class="window-title">Título</h1>
-          <p class="window-text">
-            Una breve explicación que describa qué hace Kitchen Time y que exhorta al usuario a querer involucrarse en esa misión.
+          <h1 class="window-title"></h1>
+          <p class="window-text white-text">
+            Te estamos esperando en nuestra tienda, visítanos, date una oportunidad de conocer nuestros productos. <span class="bluish-text">Te invitamos a que veas nuestra tienda.</span>
           </p>
+          <button class="action-button" type="button">Ir a la tienda</button>
         </div>
       </side-window>
       <div class="left-side">
+        <h1 class="side-title bluish-text">Conócenos</h1>
         <p class="side-text white-text">
-          Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
+          Nos gustaría que fueras parte de lo que construimos, sabemos que tenemos la mejor calidad de la ciudad, pero queremos que tú te convenzas.
         </p>
       </div>
     </div>
 
     <div id="section-1" class="section">
-      <side-window>
-        <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
-          <h1 class="window-title">Título</h1>
-          <p class="window-text">
-            Una breve explicación que describa qué hace Kitchen Time y que exhorta al usuario a querer involucrarse en esa misión.
-          </p>
-        </div>
-      </side-window>
       <div class="left-side">
+        <h1 class="side-title bluish-text">Tú dices qué, nosotros vemos cómo.</h1>
         <p class="side-text white-text">
-          Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
+          Tú tienes un sueño, nosotros también: que puedas cumplirlo. Trabajamos todos los días para poder ofrecerte los mejores productos  y el mejor servicio. <span class="bluish-text">¡Visita nuestro catálogo!</span>
         </p>
+        <button class="action-button" type="button">Ir a la tienda</button>
       </div>
       <div class="right-side">
+        <h1 class="side-title black-text" style="text-align: center">★ ★ ★ ★ ★ <br> Calidad.</h1>
         <p class="side-text black-text">
-          Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
+          Trabajamos persiguendo un <span class="bluish-text">sueño</span>: que todos tengan la oportunidad de tener acceso a las <span class="bluish-text">mejores cocinas del mundo</span>.
         </p>
       </div>
     </div>
@@ -58,36 +55,33 @@
     <div id="section-3" class="section">
       <side-window>
         <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
-          <h1 class="window-title">Título</h1>
-          <p class="window-text">
-            Una breve explicación que describa qué hace Kitchen Time y que exhorta al usuario a querer involucrarse en esa misión.
-          </p>
+          <div class="window-form">
+            <label class="window-label">Nombre de la compañía:</label>
+            <input class="window-input" type="text">
+            <label class="window-label">Teléfono:</label>
+            <input class="window-input" type="text">
+            <label class="window-label">Email:</label>
+            <input class="window-input" type="text">
+            <label class="window-label">Ubicación:</label>
+            <input class="window-input" type="text">
+            <label class="window-label">Años en el mercado:</label>
+            <input class="window-input" type="text">
+            <label class="window-label">Comentarios:</label>
+            <textarea class="window-textarea" rows="4" cols="50"></textarea>
+            <button class="window-button" type="button">Enviar</button>
+          </div>
         </div>
       </side-window>
       <div class="left-side">
+        <h1 class="side-title bluish-text">Distribuidores.</h1>
         <p class="side-text white-text">
-          Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
+          Si quieres ser parte del mayor proyecto de cocinas en Monterrey, te invitamos a que te unas a nuestra red  de distribuidores.<span class="bluish-text"> ¿Te interesa?</span>
         </p>
+        <button class="action-button" type="button">¡Únete!</button>
       </div>
     </div>
 
     <div id="section-4" class="section">
-      <side-window>
-        <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
-          <h1 class="window-title">Título</h1>
-          <p class="window-text">
-            Una breve explicación que describa qué hace Kitchen Time y que exhorta al usuario a querer involucrarse en esa misión.
-          </p>
-        </div>
-      </side-window>
-      <div class="left-side">
-        <p class="side-text white-text">
-          Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
-        </p>
-      </div>
-    </div>
-
-    <div id="section-5" class="section">
       <side-window>
         <div class="window-container solid-black-background" ng-show="$parent.menuIsShown">
           <div class="window-form">
@@ -102,12 +96,21 @@
         </div>
       </side-window>
       <div class="left-side">
+        <h1 class="side-title bluish-text">Agenda tu cita.</h1>
         <p class="side-text white-text">
-          Statement de lo que significa Kitchen time, con esta frase se busca que el usuario se sienta identificado con al visión de Kitchen Time
+            Rió Tamanzuchale No. 101 Local 1A entre Calzada Del Valle y Río De Plata, Col. Del Valle, San Pedro Garza García, NL, México.
+            <br>
+            C.P. 66247
+            <br>
+            Tel. 01 (81) 81 92 26 98
+            <br>
+            01 (81) 17 69 76 76
+            <br>
+            clientes@kitchen-time.com.mx
         </p>
       </div>
       <div class="right-side">
-        <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+        <ui-gmap-google-map center='map.center' zoom='map.zoom' options="options">
           <ui-gmap-marker coords="marker.coords" options="marker.options" idkey="marker.id">
             <ui-gmap-window show="true" options="windowOptions" closeClick="closeClick()" templateUrl='window.template'>
             </ui-gmap-window>
