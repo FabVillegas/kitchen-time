@@ -1,0 +1,10 @@
+<div ng-controller="catalogueController as vm">
+  <div class="back" ng-click="vm.goBack()">Call us!</div>
+  <div class="carrusel">
+    <img id="kitchen" class="product-image enter-animation" src="./images/carrusel/kitchen{{vm.kitchen.image_path}}.jpg">
+    <div class="product-description greenish-text">{{vm.kitchen.description}}</div>
+    <div ng-click="vm.changeKitchen('prev')" class="left">←</div>
+    <div ng-click="vm.changeKitchen('next')" class="right">→</div>
+  </div>
+  <div class="pagination">{{vm.carrusel_control + 1}}/{{vm.kitchens_array.length}}</div>
+</div>
