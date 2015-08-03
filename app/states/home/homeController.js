@@ -18,10 +18,13 @@ function homeController( $scope, $state, $stateParams, $location, $anchorScroll 
     template: './states/home/maps-template.html',
   };
   vm.windowOptions = { visible: true };
+  $scope.selected = "Cocinas";
+  vm.isDropdownDisplayed = false;
 
   vm.go = go;
   vm.closeClick = closeClick;
-  vm.changeKitchen = changeKitchen;
+  vm.showDropdown = showDropdown;
+  vm.select = select;
 
   active();
 
@@ -46,19 +49,13 @@ function homeController( $scope, $state, $stateParams, $location, $anchorScroll 
       $scope.windowOptions.visible = !$scope.windowOptions.visible;
   };
 
-  function changeKitchen( direction ) {
-    if( direction === 'next' ) {
-      vm.kitchen = vm.kitchens_array[ ( ( vm.carrusel_control + 1 ) % vm.kitchens_array.length )];
-      vm.carrusel_control = ( vm.carrusel_control + 1 ) % vm.kitchens_array.length;
-    }
-    else if( direction === 'prev' ) {
-      if ( vm.carrusel_control === 0) {
-        vm.carrusel_control = vm.kitchens_array.length;
-      }
-      vm.kitchen = vm.kitchens_array[ ( ( vm.carrusel_control - 1 ) % vm.kitchens_array.length )];
-      vm.carrusel_control = ( vm.carrusel_control - 1 ) % vm.kitchens_array.length;
-    }
-  };
+  function showDropdown(){
+    vm.isDropdownDisplayed = !vm.isDropdownDisplayed;
+  }
 
+  function select( name ) {
+    $scope.selected = name;
+    vm.isDropdownDisplayed = false;
+  };
 
 };

@@ -153,6 +153,7 @@
 
   #section-4{
     background: rgba( 255, 255, 255, 1);
+    height: auto;
   }
 
   #section-5{
@@ -172,20 +173,19 @@
     width: 100%;
     height: 10vh;
     font-size: 3em;
-    font-weight: 700px;
+    font-weight: 700;
     line-height: 10vh;
     text-align: center;
   }
 
   .images-grid{
     width: 100%;
-    height: 100vh;
     overflow: auto;
   }
 
   .carrusel-item{
-    width: 33.33%;
-    height: 45vh;
+    width: 20%;
+    height: 25vh;
     float: left;
     background-size: cover;
     background-position: center center;
@@ -299,6 +299,37 @@
     transition:         0.20s linear all;
   }
 
+  .triangle-icon {
+    width: 2%;
+    height: auto;
+    float: left;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .option-tag{
+    width: 55%;
+    float: left;
+    margin: 0;
+    margin-right: 5%;
+    text-align: right;
+  }
+
+  .options-dropdown{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 200px;
+  }
+
+  .option-item{
+    cursor: pointer;
+  }
+
+  .option-item:hover{
+    color: #77E8BD;
+  }
+
 /* ========================================================================
   MENU
   ======================================================================== */
@@ -315,11 +346,11 @@
     border: none;
     overflow: auto;
     background: rgb(0, 0, 0);
-    opacity: 0;
+    opacity: 0.9;
   }
 
   .menu-container:hover{
-    opacity: 0.90;
+    opacity: 1;
   }
 
   .link{
@@ -329,7 +360,7 @@
     margin: 0 1% 0 1%;
     line-height: 45px;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 300;
     text-align: right;
   }
 
@@ -339,6 +370,29 @@
 
   .link.offset{
     margin-left: 36%;
+  }
+
+/* ========================================================================
+  ANIMATIONS
+  ======================================================================== */
+
+  .drop-animation{
+    top: 0;
+    opacity: 1;
+  }
+
+  .drop-animation.ng-hide-add.ng-hide-add-active,
+  .drop-animation.ng-hide-remove.ng-hide-remove-active {
+    -webkit-transition: 0.25s linear all;
+    -moz-transition:    0.25s linear all;
+    -o-transition:      0.25s linear all;
+    transition:         0.25s linear all;
+    display: block !important;
+  }
+
+  .drop-animation.ng-hide {
+    top: -75px;
+    opacity: 0;
   }
 
 /* ========================================================================

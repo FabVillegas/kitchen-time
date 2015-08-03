@@ -18,7 +18,6 @@
   </div>
   <div id="content-container">
 
-    <a id="nosotros"></a>
     <div id="section-2" class="section">
       <side-window>
         <div class="open-close-icon" ng-click="toggleMenu()">{{symbol}}</div>
@@ -27,7 +26,7 @@
           <p class="window-text white-text">
             Te estamos esperando en nuestra tienda, visítanos, date una oportunidad de conocer nuestros productos. <span class="bluish-text">Te invitamos a que veas nuestra tienda.</span>
           </p>
-          <button class="action-button" type="button" ng-click="go('catalogue')">Ir a la tienda</button>
+          <button class="action-button" type="button" scroll-to="cocinas">Ir a la tienda</button>
         </div>
       </side-window>
       <div class="left-side">
@@ -37,14 +36,15 @@
         </p>
       </div>
     </div>
-
+    
+    <div id="nosotros" class="section-title solid-black-background white-text">Nosotros</div>
     <div id="section-1" class="section">
       <div class="left-side">
         <h1 class="side-title bluish-text">Tú dices qué, nosotros vemos cómo.</h1>
         <p class="side-text white-text">
           Tú tienes un sueño, nosotros también: que puedas cumplirlo. Trabajamos todos los días para poder ofrecerte los mejores productos  y el mejor servicio. <span class="bluish-text">¡Visita nuestro catálogo!</span>
         </p>
-        <button class="action-button" type="button" ng-click="vm.go('catalogue')">Ir a la tienda</button>
+        <button class="action-button" type="button" scroll-to="cocinas">Ir a la tienda</button>
       </div>
       <div class="right-side">
         <h1 class="side-title black-text" style="text-align: center">★ ★ ★ ★ ★ <br> Calidad.</h1>
@@ -54,13 +54,12 @@
       </div>
     </div>
 
-    <a id="distribuidores"></a>
+    <div id="distribuidores" class="section-title solid-black-background white-text">Distribuidores</div>
     <div id="section-3" class="section">
       <side-window>
         <div id="cheat" class="window-container">
           <button class="action-button" type="button" ng-click="toggleMenu()">¡Únete!</button>
         </div>
-
         <div class="open-close-icon" ng-click="toggleMenu()">{{symbol}}</div>
         <div class="window-container solid-black-background" ng-show="menuIsShown">
           <div class="window-form">
@@ -88,22 +87,19 @@
       </div>
     </div>
 
-    <a id="cocinas"></a>
+    <div id="cocinas" class="section-title solid-black-background white-text">
+      <p class="option-tag">{{selected}}</p>
+      <img ng-click="vm.showDropdown()" class="triangle-icon" src="assets/triangle.svg">
+    </div>
     <div id="section-4" class="section">
-      <div class="section-title solid-black-background white-text">Cocinas</div>
-      <div class="images-grid">
-        <div id="item-1" class="carrusel-item" style=" background-image: url( images/carrusel/kitchen1.jpg )"></div>
-        <div id="item-2" class="carrusel-item" style=" background-image: url( images/carrusel/kitchen2.jpg )"></div>
-        <div id="item-3" class="carrusel-item" style=" background-image: url( images/carrusel/kitchen3.jpg )"></div>
-        <div id="item-4" class="carrusel-item" style=" background-image: url( images/carrusel/kitchen4.jpg )"></div>
-        <div id="item-5" class="carrusel-item" style=" background-image: url( images/carrusel/kitchen5.jpg )"></div>
-        <div id="item-6" class="carrusel-item" style=" background-image: url( images/carrusel/kitchen6.jpg )"></div>
-        <div ng-click="vm.changeKitchen('prev')" class="left">←</div>
-        <div ng-click="vm.changeKitchen('next')" class="right">→</div>
+      <div class="options-dropdown drop-animation" ng-show="vm.isDropdownDisplayed">
+        <div class="section-title solid-black-background white-text option-item" ng-click="vm.select( 'Cocinas' )">Cocinas</div>
+        <div class="section-title solid-black-background white-text option-item" ng-click="vm.select( 'Clósets' )">Clósets</div>
       </div>
+      <images-grid></images-grid>
     </div>
 
-    <a id="contacto"></a>
+    <div id="contacto" class="section-title solid-black-background white-text">Contacto</div>
     <div id="section-5" class="section">
       <side-window>
         <div class="open-close-icon" ng-click="toggleMenu()">{{symbol}}</div>
@@ -115,7 +111,7 @@
             <input class="window-input" type="text">
             <label class="window-label">Comentarios:</label>
             <textarea class="window-textarea" rows="4" cols="50"></textarea>
-            <button class="window-button" type="button" ng-click="go('catalogue')">Enviar</button>
+            <button class="window-button" type="button">Enviar</button>
           </div>
         </div>
       </side-window>
