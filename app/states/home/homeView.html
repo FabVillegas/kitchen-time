@@ -1,4 +1,7 @@
 <div ng-controller="homeController as vm">
+
+  <landing-menu></landing-menu>
+
   <div id="video-container">
     <video id="video-loop" loop autoplay muted>
       <source src="./assets/landingvideo.mp4" type="video/mp4">
@@ -15,6 +18,7 @@
   </div>
   <div id="content-container">
 
+    <a id="nosotros"></a>
     <div id="section-2" class="section">
       <side-window>
         <div class="open-close-icon" ng-click="toggleMenu()">{{symbol}}</div>
@@ -50,6 +54,7 @@
       </div>
     </div>
 
+    <a id="distribuidores"></a>
     <div id="section-3" class="section">
       <side-window>
         <div id="cheat" class="window-container">
@@ -82,8 +87,24 @@
         </p>
       </div>
     </div>
-    <a id="contact"></a>
+
+    <a id="cocinas"></a>
     <div id="section-4" class="section">
+      <div class="section-title solid-black-background white-text">Cocinas</div>
+      <div class="images-grid">
+        <div id="item-1" class="carrusel-item" style=" background-image: url( images/carrusel/kitchen1.jpg )"></div>
+        <div id="item-2" class="carrusel-item" style=" background-image: url( images/carrusel/kitchen2.jpg )"></div>
+        <div id="item-3" class="carrusel-item" style=" background-image: url( images/carrusel/kitchen3.jpg )"></div>
+        <div id="item-4" class="carrusel-item" style=" background-image: url( images/carrusel/kitchen4.jpg )"></div>
+        <div id="item-5" class="carrusel-item" style=" background-image: url( images/carrusel/kitchen5.jpg )"></div>
+        <div id="item-6" class="carrusel-item" style=" background-image: url( images/carrusel/kitchen6.jpg )"></div>
+        <div ng-click="vm.changeKitchen('prev')" class="left">←</div>
+        <div ng-click="vm.changeKitchen('next')" class="right">→</div>
+      </div>
+    </div>
+
+    <a id="contacto"></a>
+    <div id="section-5" class="section">
       <side-window>
         <div class="open-close-icon" ng-click="toggleMenu()">{{symbol}}</div>
         <div class="window-container solid-black-background" ng-show="menuIsShown">

@@ -21,6 +21,7 @@ function homeController( $scope, $state, $stateParams, $location, $anchorScroll 
 
   vm.go = go;
   vm.closeClick = closeClick;
+  vm.changeKitchen = changeKitchen;
 
   active();
 
@@ -44,5 +45,20 @@ function homeController( $scope, $state, $stateParams, $location, $anchorScroll 
   $scope.onClick = function() {
       $scope.windowOptions.visible = !$scope.windowOptions.visible;
   };
+
+  function changeKitchen( direction ) {
+    if( direction === 'next' ) {
+      vm.kitchen = vm.kitchens_array[ ( ( vm.carrusel_control + 1 ) % vm.kitchens_array.length )];
+      vm.carrusel_control = ( vm.carrusel_control + 1 ) % vm.kitchens_array.length;
+    }
+    else if( direction === 'prev' ) {
+      if ( vm.carrusel_control === 0) {
+        vm.carrusel_control = vm.kitchens_array.length;
+      }
+      vm.kitchen = vm.kitchens_array[ ( ( vm.carrusel_control - 1 ) % vm.kitchens_array.length )];
+      vm.carrusel_control = ( vm.carrusel_control - 1 ) % vm.kitchens_array.length;
+    }
+  };
+
 
 };

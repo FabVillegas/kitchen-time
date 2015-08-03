@@ -3,7 +3,8 @@ angular.module('kitchen-time', [
   'pc035860.scrollWatch',
   'ngAnimate',
   'uiGmapgoogle-maps',
-  'fabEasterEgg'
+  'fabEasterEgg',
+  'smoothScroll'
 ]).
 config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('home');
