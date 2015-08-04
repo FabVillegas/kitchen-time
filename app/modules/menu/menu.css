@@ -1,0 +1,70 @@
+/* ========================================================================
+  MENU
+  ======================================================================== */
+
+  .menu-container{
+    width: 98%;
+    height: 45px;
+    margin: 0;
+    padding: 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    border: none;
+    overflow: auto;
+    background: rgb(0, 0, 0);
+    opacity: 0.9;
+  }
+
+  .menu-container:hover{
+    opacity: 1;
+  }
+
+  .link{
+    color: #FFFFFF;
+    float: left;
+    width: 14%;
+    margin: 0 1% 0 1%;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    font-weight: 300;
+    text-align: right;
+    position: relative;
+  }
+
+  .link:hover{
+    color: #C5F7FF;
+  }
+
+  .link.offset{
+    margin-left: 36%;
+  }
+
+  .link-option-container {
+    width: 14%;
+    margin: 0 1% 0 1%;
+    position: fixed;
+    top: 70px;
+    right: 16%;
+    z-index: 11;
+    background: rgb(0, 0, 0);
+    opacity: 0.9;
+  }
+
+  .link.option{
+    width: 95%;
+    margin: 0;
+    padding: 0 5% 0 0;
+    text-align: center;
+    float:none;
+  }
+
+  .menu-option-icon {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }

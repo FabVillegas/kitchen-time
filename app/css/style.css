@@ -330,54 +330,12 @@
     color: #77E8BD;
   }
 
-/* ========================================================================
-  MENU
-  ======================================================================== */
-
-  .menu-container{
-    width: 98%;
-    height: 45px;
-    margin: 0;
-    padding: 1%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 12;
-    border: none;
-    overflow: auto;
-    background: rgb(0, 0, 0);
-    opacity: 0.9;
-  }
-
-  .menu-container:hover{
-    opacity: 1;
-  }
-
-  .link{
-    color: #FFFFFF;
-    float: left;
-    width: 14%;
-    margin: 0 1% 0 1%;
-    line-height: 45px;
-    cursor: pointer;
-    font-weight: 300;
-    text-align: right;
-  }
-
-  .link:hover{
-    color: #C5F7FF;
-  }
-
-  .link.offset{
-    margin-left: 36%;
-  }
 
 /* ========================================================================
   ANIMATIONS
   ======================================================================== */
 
   .drop-animation{
-    top: 0;
     opacity: 1;
   }
 
