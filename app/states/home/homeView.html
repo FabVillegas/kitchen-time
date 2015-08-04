@@ -36,7 +36,7 @@
         </p>
       </div>
     </div>
-    
+
     <div id="nosotros" class="section-title solid-black-background white-text">Nosotros</div>
     <div id="section-1" class="section">
       <div class="left-side">
@@ -87,16 +87,24 @@
       </div>
     </div>
 
-    <div id="cocinas" class="section-title solid-black-background white-text">
-      <p class="option-tag">{{selected}}</p>
-      <img ng-click="vm.showDropdown()" class="triangle-icon" src="assets/triangle.svg">
-    </div>
+    <div id="cocinas" class="section-title solid-black-background white-text">Cocinas</div>
     <div id="section-4" class="section">
-      <div class="options-dropdown drop-animation" ng-show="vm.isDropdownDisplayed">
-        <div class="section-title solid-black-background white-text option-item" ng-click="vm.select( 'Cocinas' )">Cocinas</div>
-        <div class="section-title solid-black-background white-text option-item" ng-click="vm.select( 'Clósets' )">Clósets</div>
-      </div>
-      <images-grid></images-grid>
+      <images-grid show="cocinas"></images-grid>
+    </div>
+
+    <div id="closets" class="section-title solid-black-background white-text">Clósets</div>
+    <div id="section-4" class="section">
+      <images-grid show="closets"></images-grid>
+    </div>
+
+    <div id="puertas" class="section-title solid-black-background white-text">Puertas de comunicación</div>
+    <div id="section-4" class="section">
+      <images-grid show="puertas"></images-grid>
+    </div>
+
+    <div id="muebles" class="section-title solid-black-background white-text">Muebles para baño</div>
+    <div id="section-4" class="section">
+      <images-grid show="muebles"></images-grid>
     </div>
 
     <div id="contacto" class="section-title solid-black-background white-text">Contacto</div>

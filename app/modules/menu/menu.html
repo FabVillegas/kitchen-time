@@ -1,6 +1,10 @@
-<nav class="menu-container enter-animation" ng-show="displayMenu">
+<nav class="menu-container" ng-show="displayMenu">
   <div class="link offset" scroll-to="nosotros" container-id="nosotros-link">Nosotros</div>
   <div class="link" scroll-to="distribuidores" container-id="distribuidores-link">Distribuidores</div>
-  <div class="link" scroll-to="cocinas" container-id="cocinas-link">Cocinas</div>
+  <div class="link" ng-click="show()" container-id="cocinas-link" style="text-align: center"><img class="menu-option-icon" src="assets/triangle3.svg">{{selected}}</div>
   <div class="link" scroll-to="contacto" container-id="contacto-link">Contacto</div>
 </nav>
+<div ng-show="showOptions" class="link-option-container drop-animation">
+  <div scroll-to="cocinas" ng-click="changeSelected( 'Cocinas' )" class="link option">Cocinas</div>
+  <div scroll-to="closets" ng-click="changeSelected( 'Clósets' )" class="link option">Clósets</div>
+</div>
