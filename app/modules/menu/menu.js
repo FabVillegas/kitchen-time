@@ -9,6 +9,9 @@ angular.module( 'kitchen-time' ).directive( 'landingMenu', ['$window', '$locatio
       scope.showOptions = false;
       scope.selected = "Cocinas";
 
+      var target = document.getElementById( 'special-fix' );
+      scope.special = angular.element( target );
+
       scope.show = function() {
         scope.showOptions = !scope.showOptions;
       };
@@ -16,6 +19,16 @@ angular.module( 'kitchen-time' ).directive( 'landingMenu', ['$window', '$locatio
       scope.changeSelected = function( name ) {
         scope.selected = name;
         scope.showOptions = false;
+        if( name === 'Puertas de comunicación' ) {
+          scope.special.css({
+            'line-height': '22px'
+          });
+        }
+        else{
+          scope.special.css({
+            'line-height': '45px'
+          });
+        }
       };
     }
   }

@@ -1,6 +1,6 @@
 .window-container{
   margin: 0 0 0 0;
-  height: 100vh;
+  height: 80vh;
   position: absolute;
   top: 0;
   z-index: 10;
@@ -62,7 +62,7 @@
   width: 30%;
   margin: 0 10% 0 60%;
   position: absolute;
-  bottom: 30vh;
+  bottom: 15vh;
   height: 40px;
   font-size: 1.5em;
   font-family: 'Roboto';
@@ -89,7 +89,7 @@
   color: #FFFFFF;
   font-family: 'Roboto';
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 .window-input {
   width: 100%;
@@ -98,7 +98,7 @@
   color: #000000;
   font-weight: 300;
   font-family: 'Roboto';
-  font-size: 1.5em;
+  font-size: 1em;
   border: none;
 }
 
@@ -110,7 +110,7 @@
   color: #000000;
   font-weight: 300;
   font-family: 'Roboto';
-  font-size: 1.5em;
+  font-size: 1em;
   border: none;
 }
 
