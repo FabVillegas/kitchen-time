@@ -4,7 +4,8 @@ angular.module('kitchen-time', [
   'ngAnimate',
   'uiGmapgoogle-maps',
   'fabEasterEgg',
-  'smoothScroll'
+  'smoothScroll',
+  'ngDialog'
 ]).
 config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise('home');

@@ -1,4 +1,4 @@
-angular.module( 'kitchen-time' ).directive( 'imagesGrid', [ function( ){
+angular.module( 'kitchen-time' ).directive( 'imagesGrid', ['ngDialog', function( ngDialog ){
   return{
     restrict: 'E',
     scope: {},
@@ -9,6 +9,8 @@ angular.module( 'kitchen-time' ).directive( 'imagesGrid', [ function( ){
       scope.closets =  false;
       scope.puertas = false;
       scope.muebles = false;
+
+      scope.openBigger = openBigger;
 
       if( iAttrs.show === 'cocinas') {
         scope.cocinas = true;
@@ -34,6 +36,14 @@ angular.module( 'kitchen-time' ).directive( 'imagesGrid', [ function( ){
         scope.puertas = false;
         scope.muebles = true;
       }
+
+      function openBigger( image ) {
+        ngDialog.open({
+          template: '<img style="width: 100%; height: auto; margin-top: 10px;" src="' + image + '">',
+          plain: true,
+          scope: scope
+        });
+      };
 
     }
   }

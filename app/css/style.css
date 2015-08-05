@@ -28,6 +28,11 @@
     color: #77E8BD;
   }
 
+  .ngdialog-content{
+    border-radius: 0px !important;
+    width: 750px !important;
+  }
+
 /* ========================================================================
   HOME
   ========================================================================= */
@@ -201,6 +206,11 @@
     float: left;
     background-size: cover;
     background-position: center center;
+    cursor: pointer;
+  }
+
+  .carrusel-item:hover{
+    opacity: 0.75;
   }
 
   .five-item{
