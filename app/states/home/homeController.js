@@ -1,8 +1,8 @@
 angular.module( 'kitchen-time' ).controller( 'homeController', homeController );
 
-homeController.$inject = [ '$scope', '$state', '$stateParams', '$location', '$anchorScroll' ];
+homeController.$inject = [ '$scope', '$state', '$stateParams', '$location', '$anchorScroll', 'ngDialog' ];
 
-function homeController( $scope, $state, $stateParams, $location, $anchorScroll ) {
+function homeController( $scope, $state, $stateParams, $location, $anchorScroll, ngDialog ) {
 
   var vm = this;
   vm.map = { center: { latitude: 25.656681, longitude: -100.36575 }, zoom: 19 };
