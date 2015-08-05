@@ -68,3 +68,11 @@
     top: 20px;
     right: 0;
   }
+
+  .logo-in-header{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    height: auto;
+  }
